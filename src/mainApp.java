@@ -3,16 +3,9 @@ import java.awt.print.Book;
 public class mainApp {
     public static void main(String[] args) {
 
-        Ticket_Agent TicketAgent4 = new Ticket_Agent("Ticket Agent", "Bob", 693447772, "Makis@gmail.com", "Helpdesk");
-        Ticket_Agent TicketAgent5 = new Ticket_Agent("Ticket Agent", "Martha", 693447772, "Katerina@gmail.com", "Ticket Agent Manager");
+        Ticket_Agent TicketAgent4 = new Ticket_Agent("Ticket Agent", "Bob", 693447772, "Bob@gmail.com", "Helpdesk");
+        Ticket_Agent TicketAgent5 = new Ticket_Agent("Ticket Agent", "Martha", 693447772, "Martha@gmail.com", "Ticket Agent Manager");
 
-/*
-
-        TicketAgent1.getValues();
-        TicketAgent2.getValues();
-        TicketAgent3.getValues();
-        TicketAgent4.getValues();
-*/
 //      With this method we get how many employees has been instantiated
         Employee.Employees();
 
@@ -26,10 +19,6 @@ public class mainApp {
 
         Ticket tk3 = TicketAgent4.issueTicket(36, "Fotis Migas", 20240411, "Sofia", "Bristol", "SOF01115", 88.4F, 9.3F, "YPA7");
 
-//        rs1.getValues();
-//        tk1.getValues();
-//        tk2.getValues();
-//
         bk1.getValues();
         TicketAgent4.getValues();
     }
