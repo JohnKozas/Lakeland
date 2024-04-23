@@ -33,7 +33,7 @@ public class mainApp {
 //        tk1.getValues();
 //        tk2.getValues();
 //
-//        bk1.getValues();
+        bk1.getValues();
         TicketAgent4.getValues();
     }
 }
