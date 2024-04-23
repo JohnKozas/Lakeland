@@ -2,12 +2,9 @@ import java.awt.print.Book;
 
 public class mainApp {
     public static void main(String[] args) {
-//        Employee TicketAgent1 = new Employee("Ticket Agent", "John", 692034532, "John@gmail.com");
-//        Employee TicketAgent2 = new Employee("Ticket Agent", "Maria", 696748624, "Maria@gmail.com");
-//        Employee TicketAgent3 = new Employee("Sales Agent", "Takis", 697777772, "Takis@gmail.com");
-//      Ticket agents are being instantiated as objects from the class Ticket_Agent
-        Ticket_Agent TicketAgent4 = new Ticket_Agent("Ticket Agent", "Makis", 693447772, "Makis@gmail.com", "Helpdesk");
-        Ticket_Agent TicketAgent5 = new Ticket_Agent("Ticket Agent", "Katerina", 693447772, "Katerina@gmail.com", "Ticket Agent Manager");
+
+        Ticket_Agent TicketAgent4 = new Ticket_Agent("Ticket Agent", "Bob", 693447772, "Makis@gmail.com", "Helpdesk");
+        Ticket_Agent TicketAgent5 = new Ticket_Agent("Ticket Agent", "Martha", 693447772, "Katerina@gmail.com", "Ticket Agent Manager");
 
 /*
 
