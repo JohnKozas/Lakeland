@@ -6,7 +6,7 @@ class Employee {
     private int telephoneNumber;
     private String email;
     private int Employee_Id;
-//    This field "Work" is a field that i have code (John) to store the things that an employee has done.
+//    This field "Work" is a field that to store the things that an employee has done. (This field does not appear in the class diagram)
     String Work;
     private static int id = 0;
 
