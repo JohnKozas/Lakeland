@@ -1,5 +1,6 @@
 public class Booking {
 
+            static int Id=0;
             int bookingId;
             int ticketId;
             int customerId;
@@ -7,8 +8,9 @@ public class Booking {
 
 
 
-            public Booking(int bookingId, int ticketId, int customerId, int flightId){
-                this.bookingId=bookingId;
+            public Booking(int ticketId, int customerId, int flightId){
+                Id=Id+1;
+                bookingId=Id;
                 this.ticketId=ticketId;
                 this.customerId=customerId;
                 this.flightId=flightId;

@@ -1,12 +1,14 @@
 public class Reservation {
+  static int Id=0;
   int reservationId;
   int reservationDate;
   int customerId;
   int flightId;
   int availUntilDate;
 
-  public Reservation(int reservationId, int reservationDate, int customerId, int flightId, int availUntilDate){
-      this.reservationId=reservationId;
+  public Reservation(int reservationDate, int customerId, int flightId, int availUntilDate){
+      Id=Id+1;
+      this.reservationId=Id;
       this.reservationDate=reservationDate;
       this.customerId=customerId;
       this.flightId=flightId;

@@ -10,14 +10,16 @@ public class Ticket {
     private Float discount;
     private String ticketBasis;
     private static int id=0;
+    private Customer cst;
 // +loyaltyPointsAdded
 
-    // public Ticket(int ticketId, String passengerName, int flightDate, String arrivalAirportId, String departureAirportId, String flightId, Float ticketCost, Float discount, String ticketBasis){
-    public Ticket(int ticketId, String passengerName, int flightDate, String arrivalAirportId, String departureAirportId, String flightId, Float ticketCost, Float discount, String ticketBasis){
+// The following constructor takes the object "cst" so that the string "passengerName" gets the name of the object customer
+    public Ticket(int ticketId, Customer cst, int flightDate, String arrivalAirportId, String departureAirportId, String flightId, Float ticketCost, Float discount, String ticketBasis){
 
         id=id+1;
+//       Here the method getPassengerName() gets the name of the object Customer
+        this.passengerName=cst.getPassengerName();
         this.ticketId=id;
-        this.passengerName=passengerName;
         this.flightDate=flightDate;
         this.arrivalAirportId=arrivalAirportId;
         this.departureAirportId=departureAirportId;
@@ -25,6 +27,7 @@ public class Ticket {
         this.ticketCost=ticketCost;
         this.discount=discount;
         this.ticketBasis=ticketBasis;
+        this.cst=cst;;
     }
 
     public void getValues(){
@@ -37,6 +40,8 @@ public class Ticket {
         System.out.println("Ticket Cost is: "+ticketCost);
         System.out.println("discount is: "+discount);
         System.out.println("ticketBasis is: "+ticketBasis);
+        System.out.println("The customer that owns the ticket is the following:");
+        cst.getValues();
         System.out.println();
     }
 }
