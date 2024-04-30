@@ -31,8 +31,9 @@ public class Ticket {
     }
 
     public void getValues(){
+        System.out.println("Information about the ticket "+ticketId+" is the following: ");
         System.out.println("Ticket id is: "+ticketId);
-        System.out.println("Passenger name is: "+passengerName);
+        System.out.println("Passenger name that owns the ticket is: "+passengerName);
         System.out.println("Flight date is: "+flightDate);
         System.out.println("Arrival Airport is: "+arrivalAirportId);
         System.out.println("Departure Airport is: "+departureAirportId);

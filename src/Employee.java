@@ -33,6 +33,6 @@ class Employee {
 
     // A static method, this is for the whole class
     public static void Employees(){
-        System.err.println("Employees are: "+id);
+        System.out.println("Employees are: "+id);
     }
 }

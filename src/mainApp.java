@@ -6,9 +6,6 @@ public class mainApp {
         Ticket_Agent TicketAgent1 = new Ticket_Agent("Ticket Agent", "Bob", 693447772, "Bob@gmail.com", "Helpdesk");
         Ticket_Agent TicketAgent2 = new Ticket_Agent("Ticket Agent", "Martha", 693447772, "Martha@gmail.com", "Ticket Agent Manager");
 
-//      With this method we get how many employees has been instantiated
-        Employee.Employees();
-
         Reservation rs1 = TicketAgent1.makeReservation(2,3,4,5,6);
         Reservation rs2 = TicketAgent1.makeReservation(3,4,5,66,99);
 
@@ -32,7 +29,10 @@ public class mainApp {
 //        cst2.getValues();
 //        cst2.checkIn();
 //        cst1.payment();
-        System.out.println("Ticket agent 2 has done the following: "+TicketAgent2.Work);
+        System.out.println("Ticket agent 1 has done the following: "+TicketAgent1.Work);
+        //      With this method we get how many employees has been instantiated
+        Employee.Employees();
+        
         System.out.println("Number of customers is: "+Customer.Numberofcustomers);
 
     }
